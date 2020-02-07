@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Ratings</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./styles/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col mx-auto">
+                <select id="product-selector" class="form-control custom-select text-primary">
+                    <option value="0" disabled selected>Select Product</option>
+                    <option value="sony">Sony 4k TV</option>
+                    <option value="samsung">Samsung 4k TV</option>
+                    <option value="vizio">Vizio 4k TV</option>
+                    <option value="panasonic">Panasonic 4k TV</option>
+                    <option value="phillips">Phillips 4k TV</option>
+                </select>
+                <div class="form-group mt-3">
+                    <input class="form-control" id="rating-control" type="number" step="0.1" max="5" placeholder="Rate 1 - 5" disabled></input>
+                </div>
+                <table class="table table-striped">
+                    <tr class="text-primary">
+                        <th>4K Television</th>
+                        <th>Stars</th>
+                        <th>Ratings</th>
+                    </tr>
+                    <tr class="sony">
+                        <td>Sony 4K TV</td>
+                        <td>
+                            <div class="outer-stars">
+                                <div class="inner-stars"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="number-ratings"></span>
+                        </td>
+                    </tr>
+                    <tr class="samsung">
+                        <td>Samsung 4K TV</td>
+                        <td>
+                            <div class="outer-stars">
+                                <div class="inner-stars"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="number-ratings"></span>
+                        </td>
+                    </tr>
+                    <tr class="vizio">
+                        <td>Vizio 4K TV</td>
+                        <td>
+                            <div class="outer-stars">
+                                <div class="inner-stars"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="number-ratings"></span>
+                        </td>
+                    </tr>
+                    <tr class="panasonic">
+                        <td>Panasonic 4K TV</td>
+                        <td>
+                            <div class="outer-stars">
+                                <div class="inner-stars"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="number-ratings"></span>
+                        </td>
+                    </tr>
+                    <tr class="phillips">
+                        <td>Phillips 4K TV</td>
+                        <td>
+                            <div class="outer-stars">
+                                <div class="inner-stars"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="number-ratings"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
